@@ -23,7 +23,6 @@ public class Test {
         return rs;
     }
 
-
     public static void main(String[] args) throws Exception {
         //Retrieve data
         ResultSet rs = RetrieveData();
@@ -49,7 +48,7 @@ public class Test {
 
             //Create a new JSON file for every record
             FileWriter file = new FileWriter
-                    ("D:\\Demetris\\OneDrive\\Programming\\Java\\MAP\\json-output\\output-" + counter + ".json");
+                    ("D:\\Demetris\\OneDrive\\Programming\\GitHub\\MAP-Demetris\\json-output\\output-" + counter + ".json");
             counter++;
             file.write(record.toString());
             file.close();
